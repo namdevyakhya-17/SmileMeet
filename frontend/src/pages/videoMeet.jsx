@@ -14,6 +14,7 @@ import Badge from "@mui/material/Badge";
 import { useNavigate, useLocation } from "react-router-dom";
 import PersonIcon from '@mui/icons-material/Person';
 import ShareIcon from '@mui/icons-material/Share';
+import CloseIcon from '@mui/icons-material/Close';
 
 const server_url = process.env.REACT_APP_API_BASE_URL;
 var connections = {};
@@ -503,7 +504,15 @@ export default function VideoMeetComponent() {
         <div className={styles.meetVideoContainer}>
           <div className={`${styles.chatRoom} ${showModal ? styles.show : ''}`}>
             <div className={styles.chatContainer}>
+              <div style={{ position: "relative", textAlign: "center" }}>  
+              <IconButton
+                onClick={handleChat}
+                style={{ position: "absolute", left: 0, top: 0 }}
+              >
+                <CloseIcon />
+              </IconButton>
               <h1 className={styles.chatHeader}>Chat</h1>
+            </div>
               <div className={styles.chattingDisplay}>
                 {messages.length > 0 ? (
                   messages.map((item, index) => (
