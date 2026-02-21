@@ -1,4 +1,5 @@
-SmileMeet😊 is a full-stack real-time user-friendly meeting platform built using the MERN stack.  
+# SmileMeet - user friendly meeting platform
+SmileMeet😊 is a full-stack real-time meeting platform built using the MERN stack.  
 Users can register, log in, create meetings, and track activity with real-time communication support.
 
 ### Tech Stacks used
